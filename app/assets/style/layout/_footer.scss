@@ -1,0 +1,114 @@
+.footer-wrap {
+    @include phone() {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 16px;
+    }
+}
+
+.footer-top-nav {
+    padding: 60px 0 32px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include phone() {
+        padding: 0px;
+    }
+
+    .footer-nav {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+
+        @include phone() {
+            display: none;
+        }
+    }
+
+    .footer-icon {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+
+        @include phone() {
+            order: 0;
+            margin-top: 24px;
+            li {
+                margin-right: 8px;
+            }
+
+            li img{
+                width: 24px;
+            }
+        }
+        
+    }
+
+}
+
+.footer-info-wrap {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 32px;
+    color: #fff;
+
+    @include phone() {
+        order: -1;
+        margin-top: 24px;
+        border-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
+.footer-info {
+    display: flex;
+    align-items: center;
+    
+    @include phone() {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    span {
+        font-size: 36px;
+
+        @include phone() {
+            font-size: 16px;
+            line-height: 24px;
+            margin-right: 12px;
+        }
+    }  
+}
+
+// .material-symbols-outlined {
+//     font-size: 36px;
+// }
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding-bottom: 32px;
+
+    @include phone() {
+        flex-direction: column;
+        align-items: start;
+        
+        p {
+            margin-bottom: 8px;
+        }
+    }
+
+    .copyright-list {
+        display: flex;
+
+        @include phone() {
+            flex-direction: column;
+            p {
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
