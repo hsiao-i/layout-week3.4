@@ -364,6 +364,8 @@ a {
     .footer-info {
       font-size: 16px;
       line-height: 24px; } }
+  .footer-info p {
+    word-break: break-all; }
   .footer-info span {
     font-size: 36px; }
     @media (max-width: 767px) {
@@ -436,7 +438,7 @@ a {
         -ms-flex-align: end;
             align-items: end; }
     .banner .banner-content a {
-      padding: 6px 12px;
+      padding: 12px;
       text-align: center; }
     @media (max-width: 767px) {
       .banner .banner-content span {
@@ -446,8 +448,7 @@ a {
         font-size: 24px;
         line-height: 36px; }
       .banner .banner-content a {
-        font-size: 20px;
-        line-height: 30px; } }
+        padding: 6px 12px; } }
 
 .introduce {
   padding: 80px 0px; }
@@ -456,7 +457,10 @@ a {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .introduce li {
     margin-left: 24px;
     width: 22%; }
@@ -468,7 +472,7 @@ a {
     text-align: left; }
   @media (max-width: 992px) {
     .introduce ul li {
-      width: 47%;
+      width: 46%;
       margin-bottom: 50px; } }
   @media (max-width: 767px) {
     .introduce h2 {
@@ -578,7 +582,7 @@ a {
     padding: 16px;
     background-color: #fff;
     position: relative; }
-    .recommend-card-wrap .recommend-card-body p:last-child {
+    .recommend-card-wrap .recommend-card-body time {
       color: #707070; }
     .recommend-card-wrap .recommend-card-body .recommend-date {
       position: absolute;
@@ -626,7 +630,13 @@ a {
     background-color: #AA0601;
     color: #fff;
     font-size: 16px;
-    border: 0; }
+    border: 0;
+    cursor: pointer; }
+    .contact-body .form-input-button:hover {
+      background-color: #650300; }
+    @media (max-width: 992px) {
+      .contact-body .form-input-button {
+        width: 100%; } }
 
 .nav-optical {
   display: -webkit-box;
